@@ -14,6 +14,7 @@ const Header = React.createClass({
 	render: function() {
 		return (
 			<div>
+				<h1>Flux</h1>
 				<input type="text" ref="todo" />
 				<button onClick={this._addTodo}>ADD</button>
 			</div>

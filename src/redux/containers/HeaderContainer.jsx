@@ -5,10 +5,11 @@ import {
 } from '../actions/TodoActions'
 import TodoHeader from '../components/TodoHeader'
 
-const mapStateToProps = (state) => ({
-	todo: state.getIn(['todo', 'todo'])
-})
-
+const mapStateToProps = (state) => {
+	return ({
+		todo: state.getIn(['todoReducer', 'todo'])
+	})
+}
 const mapDispatchToProps = (dispatch) => ({
 	onChange: (event) => {
 		dispatch(changTodo({

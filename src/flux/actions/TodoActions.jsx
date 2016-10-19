@@ -5,14 +5,18 @@ const TodoActions = {
 	addTodo: function(text) {
 		TodoDispatcher.dispatch({
 			actionType: ADD_TODO,
-			todo: text
+			payload: {
+				todo: text
+			}
 		})
 	},
 
 	delTodo: function(idx) {
 		TodoDispatcher.dispatch({
 			actionType: DEL_TODO,
-			idx: idx
+			payload: {
+				idx: idx
+			}
 		})
 	}
 }

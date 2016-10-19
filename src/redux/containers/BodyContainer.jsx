@@ -5,7 +5,7 @@ import {
 import TodoBody from '../components/TodoBody'
 
 const mapStateToProps = (state) => ({
-	todos: state.getIn(['todo', 'todos'])
+	todos: state.getIn(['todoReducer', 'todos'])
 })
 
 const mapDispatchToProps = (dispatch) => ({

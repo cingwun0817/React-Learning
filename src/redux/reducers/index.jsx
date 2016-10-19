@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux-immutable'
-import todo from './Todo/TodoReducer'
+import todoReducer from './Todo/TodoReducer'
 
 const rootReducer = combineReducers({
-	todo
+	todoReducer
 })
 
 export default rootReducer

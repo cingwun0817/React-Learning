@@ -2,51 +2,51 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 /** demo props */
-// const Board = React.createClass({
-// 	getInitialState: function() {
-// 		return {
-// 			list: [
-// 				{name: 'Leo', 'date':'2016/10/1','send': 'Hi, My friend.'},
-// 				{name: 'Kettan', 'date':'2016/10/2', 'send': 'Hi, Leoooooo.'}
-// 			]
-// 		}
-// 	},
-// 	sendHello: function() {
-// 		alert('Hello.')
-// 	},
-// 	render: function() {
-// 		return (
-// 			<div>
-// 				<h2>List</h2>
-// 				{
-// 					this.state.list.map(function(list, idx) {
-// 						return (
-// 							<Msg key={idx} name={list.name} date={list.date} sendHello={this.sendHello}>
-// 								{list.send}
-// 							</Msg>
-// 						)
-// 					}.bind(this))
-// 				}
-// 			</div>
-// 		)
-// 	}
-// })
+const Board = React.createClass({
+	getInitialState: function() {
+		return {
+			list: [
+				{name: 'Leo', 'date':'2016/10/1','send': 'Hi, My friend.'},
+				{name: 'Kettan', 'date':'2016/10/2', 'send': 'Hi, Leoooooo.'}
+			]
+		}
+	},
+	sendHello: function() {
+		alert('Hello.')
+	},
+	render: function() {
+		return (
+			<div>
+				<h2>List</h2>
+				{
+					this.state.list.map(function(list, idx) {
+						return (
+							<Msg key={idx} name={list.name} date={list.date} sendHello={this.sendHello}>
+								{list.send}
+							</Msg>
+						)
+					}.bind(this))
+				}
+			</div>
+		)
+	}
+})
 
-// const Msg = React.createClass({
-// 	render: function() {
-// 		return (
-// 			<div>
-// 				<span>{this.props.name} Send:</span>
-// 				<small>({this.props.date})</small>
-// 				<p>{this.props.children}</p>
-// 				<button onClick={this.props.sendHello}>Send Hello</button>
-// 				<hr/>
-// 			</div>
-// 		)
-// 	}
-// })
+const Msg = React.createClass({
+	render: function() {
+		return (
+			<div>
+				<span>{this.props.name} Send:</span>
+				<small>({this.props.date})</small>
+				<p>{this.props.children}</p>
+				<button onClick={this.props.sendHello}>Send Hello</button>
+				<hr/>
+			</div>
+		)
+	}
+})
 
-// ReactDOM.render(<Board/>, document.getElementById('app'))
+ReactDOM.render(<Board/>, document.getElementById('app'))
 
 /** demo state&refs */
 // const List = React.createClass({
@@ -153,15 +153,15 @@ import ReactDOM from 'react-dom'
 // ReactDOM.render(<Todo/>, document.getElementById('app'))
 
 /** demo redux */
-import { Provider } from 'react-redux'
-import Main from './redux/components/Main'
-import TodoStore from './redux/stores/TodoStore'
+// import { Provider } from 'react-redux'
+// import Main from './redux/components/Main'
+// import TodoStore from './redux/stores/TodoStore'
 
-ReactDOM.render(
-	<Provider store={ TodoStore }>
-		<Main/>
-	</Provider>
-	, document.getElementById('app'))
+// ReactDOM.render(
+// 	<Provider store={ TodoStore }>
+// 		<Main/>
+// 	</Provider>
+// 	, document.getElementById('app'))
 
 
 

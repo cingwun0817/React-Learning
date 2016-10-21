@@ -7,7 +7,8 @@ import TodoHeader from '../components/TodoHeader'
 
 const mapStateToProps = (state) => {
 	return ({
-		todo: state.getIn(['todoReducer', 'todo'])
+		todo: state.getIn(['todoReducer', 'todo']),
+		count: state.getIn(['todoReducer', 'count'])
 	})
 }
 const mapDispatchToProps = (dispatch) => ({

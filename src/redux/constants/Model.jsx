@@ -4,5 +4,6 @@ export const TodoState = Immutable.fromJS({
 	'todo': {
 		text: ''
 	},
-	'todos': []
+	'todos': [],
+	'count': 0
 })
